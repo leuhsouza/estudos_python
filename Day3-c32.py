@@ -1,5 +1,5 @@
-height = float(input('Digite seu peso: '))
-weight = int(input('Digite sua altura: '))
+weight = float(input('Digite seu peso: '))
+height = float(input('Digite sua altura: '))
 
 bmi = (weight/(height**2))
 
@@ -7,8 +7,18 @@ bmi = (weight/(height**2))
 if bmi <= 18.5:
   print(f'Your Bmi is {bmi:.2f}, you are underweight.')
 
-else :
-    print(f"Your bmi is {bmi:.2f}")
+elif 18.5 < bmi < 25:
+   print(f'Your BMI is {bmi:.2f}, you have a normal weight.')
+
+elif  25 <= bmi <30:
+   print(f'Your BMI is {bmi:.2f}, you are slightly overweight.')
+
+elif 30 <= bmi < 35:
+    print(f'Your BMI is {bmi:.2f}, you are obese.')
+
+else: 
+    print(f'Your BMI is {bmi:.2f}, you are clinically obese.')
+
 
 
 
