@@ -1,3 +1,4 @@
+#minha versão
 """print("The Love Calculator is calculating your score...")
 name1 = input() # What is your name?
 name2 = input() # What is their name?
@@ -30,8 +31,8 @@ elif 40 <= score <= 50:
 else:
     print(f'Your score is {score}.')"""
 
-
-print("The Love Calculator is calculating your score...")
+#versão chat gpt
+"""print("The Love Calculator is calculating your score...")
 name1 = input()  
 name2 = input()  
 
@@ -49,9 +50,42 @@ E = name1.lower().count('e') + name2.lower().count('e')
 
 love = L + O + V + E
 
-print(f'True: {true}, Love: {love}')  # Adicionando esta linha para depuração
 
 score = true * 10 + love
+
+if score < 10 or score > 90:
+    print(f'Your score is {score}, you go together like coke and mentos.')
+elif 40 <= score <= 50:
+    print(f'Your score is {score}, you are alright together.')
+else:
+    print(f'Your score is {score}.')"""
+
+
+
+#versão do professor
+
+print("The Love Calculator is calculating your score...")
+name1 = input()  
+name2 = input()  
+
+combined_names = name1+name2
+lower_names = combined_names.lower()
+
+
+t = lower_names.count('t')
+r = lower_names.count('r')
+u = lower_names.count('u')
+e = lower_names.count('e')
+first_digit = t + r + u + e
+
+l = lower_names.count('t')
+o = lower_names.count('r')
+v = lower_names.count('u')
+e = lower_names.count('e')
+
+second_digit = l + o + v + e
+
+score = int(str(first_digit) + str(second_digit))
 
 if score < 10 or score > 90:
     print(f'Your score is {score}, you go together like coke and mentos.')
