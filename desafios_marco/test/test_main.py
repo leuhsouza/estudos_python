@@ -1,4 +1,0 @@
-import linear_search
-
-
-def test_func_deve_retornar_
